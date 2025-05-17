@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>llogin page</title>
+    <Style>
+        *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-size: 20px;
+            font-family: 'Times New Roman', Times, serif;
+            border-radius: 15px;
+
+        
+        }
+        body{
+            width:100%;
+            height: 100vh;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            background:linear-gradient(to right,rgb(151, 151, 222),rgb(243, 237, 237));
+            
+           
+        }
+        .container{
+            width: 25%;
+            min-height: 300px;
+            border-radius: 5px;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            row-gap: 20px;
+            padding:20px;
+            background-color: wheat;
+            
+        
+
+           
+         
+        }
+        h1{
+            justify-content: center;
+            text-align: center;
+        }
+        .one{
+           color: black;
+           background-color: rgb(228, 64, 243);
+          padding:10px;
+          margin:10px;
+
+          width:250px;
+           border: 10px;
+        }
+        .two{
+           color: black;
+           background-color: rgb(198, 13, 121);
+          padding:10px;
+        
+          width:250px;
+          margin:10px;
+           border: 10px;
+        }
+        .three{
+            
+           color: black;
+           background-color: rgb(19, 174, 19);
+          padding:10px;
+          width:250px;
+           margin:10px;
+           border: 10px;
+        }
+      .from{
+         margin:10px;
+         padding:10px;
+          width:250px;
+           border: 10px;
+        
+      }
+      
+
+    </Style>
+</head>
+<body>
+    
+    <div class="container">
+        <h2>OTP GENERATOR</h2>
+        <h2 id="otpnum"></h2>
+
+    <button type="button" onclick="handlegenerate()" class="one">Generate OTP</button>
+    <input class="from" type="text" placeholder="Enter OTP" id="otpinput">
+    <button type="button" onclick="submit()" class="two">Submit</button>
+    
+    <button type="button" onclick="refresh()" class="three">Refresh</button>
+    </div>
+    <script src="script.js">
+
+    </script>
+    
+</body>
+</html>
